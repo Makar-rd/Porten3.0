@@ -869,6 +869,7 @@ button:hover {
     display: flex;
     justify-content: space-evenly;
     padding-top: 50px;
+    width: 1120px;
 }
 
 .section3__center__logo__one {
@@ -896,7 +897,7 @@ button:hover {
 }
 
 .section4__center {
-    max-width: 1120px;
+    width: 1120px;
     justify-content: space-evenly;
     display: flex;
 }
@@ -992,16 +993,17 @@ form {
 }
 
 .footer {
-    height: 50px;
-    width: 1120px;
+    width: 100%;
     margin: 17px auto;
     font-size: 12px;
     line-height: 16px;
     color: #D0D0D0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer__container {
-    max-width: 1120px;
+    width: 1120px;
     display: flex;
     justify-content: space-between;
 }
@@ -1040,11 +1042,15 @@ input[type="checkbox"]:checked ~ .text {
     }
 
     .main__left__clock {
-        gap: 20px;
+        gap: 10px;
         margin-right: 20px;
         margin-left: 20px;
     }
 
+    .footer__container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
 }
 
@@ -1065,6 +1071,14 @@ input[type="checkbox"]:checked ~ .text {
     .header__top__lower1 {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .section2__center {
+        margin-left: 15px;
+    }
+
+    .section3__center__logo {
+        margin-left: 15px;
     }
 }
 
@@ -1102,6 +1116,7 @@ input[type="checkbox"]:checked ~ .text {
         gap: 10px;
         margin-top: 30px;
         padding-top: 0;
+        width: 100%;
     }
 
 }
@@ -1152,52 +1167,61 @@ input[type="checkbox"]:checked ~ .text {
     }
 
     .section2__center__clock {
+        margin-left: 15px;
+        margin-right: 15px;
+        justify-content: space-between;
         flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 60px;
     }
 
+    .section2__center__clock__one {
+        margin-right: 0;
+    }
+
+    .section2__center__clock__two {
+        margin-right: 0;
+    }
+
+    .section2__center__clock__four{
+        margin-right: 0;
+    }
 
     .section2__center__clock__media {
-        flex-basis: 45%;
-        margin-left: 35px;
+
         margin-bottom: 10px;
     }
 
     .section2__center__clock3__media {
-        flex-basis: 45%;
-        margin-left: 35px;
+
         margin-bottom: 10px;
+    }
+
+    .section2__center__clock__three {
+        margin-right: 0;
     }
 
     .section2__center__clock2 {
         flex-wrap: wrap;
-        justify-content: center;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .section2__center__clock2__media1 {
-        flex-basis: 45%;
-        margin-left: 35px;
+
         margin-bottom: 10px;
     }
 
     .section2__center__clock2__media3 {
-        flex-basis: 45%;
-        margin-left: 35px;
+
         margin-bottom: 10px;
     }
 
     .section3__center__logo {
-        padding-bottom: 25px;
-        padding-top: 25px;
+        justify-content: space-between;
         flex-wrap: wrap;
-        justify-content: center;
     }
 
     .section3__center__logo__one {
-        flex-basis: 45%;
-
-
+        padding-right: 0;
     }
 
     .section3__center__logo__two {
@@ -1205,8 +1229,7 @@ input[type="checkbox"]:checked ~ .text {
     }
 
     .section3__center__logo__three {
-        flex-basis: 45%;
-
+        padding-right: 0;
     }
 
     .section4 {
@@ -1219,6 +1242,7 @@ input[type="checkbox"]:checked ~ .text {
         flex-direction: column;
         gap: 20px;
         margin: 10px 0 10px 0;
+        align-items: center;
     }
 
     .section4__center__leftblock {
@@ -1392,7 +1416,58 @@ input[type="checkbox"]:checked ~ .text {
     .main__left__clock {
         display: flex;
         flex-direction: column;
+        padding-top: 40px;
     }
+
+    .clocktext {
+        align-items: center;
+    }
+
+    .main__left__clock__one{
+        width: 480px;
+    }
+    .main__left__clock__two{
+        width: 480px;
+    }
+    .main__left__clock__three{
+        width: 480px;
+    }
+
+    .section2__center__clock {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section2__center__clock__one {
+        width: 480px;
+    }
+
+    .section2__center__clock__two {
+        width: 480px;
+    }
+
+    .section2__center__clock__three {
+        width: 480px;
+    }
+
+    .section2__center__clock__four {
+        width: 480px;
+    }
+
+    .section2__center__clock2 {
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .section3__center{
+        display: none;
+    }
+
+    .section4__center__leftblock {
+        display: none;
+    }
+
 
 }
 
